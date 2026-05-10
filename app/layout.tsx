@@ -22,13 +22,15 @@ export const metadata: Metadata = {
     apple: '/images/cities/logo-favicon.png',
   },
   title: {
-    default: 'FIFA World Cup 2026 Host Cities & Stadiums Guide',
+    default: 'FIFA World Cup 2026 Scores, Host Cities & Stadiums Guide',
     template: '%s | FIFA World Cup 2026 Guide',
   },
   description:
-    'Complete guide to all 16 FIFA World Cup 2026 host cities and stadiums across the USA, Canada, and Mexico. Stadium info, tickets, travel tips, hotels, and match schedules.',
+    'Complete guide to FIFA World Cup 2026 — live scores, results, all 16 host cities and stadiums across the USA, Canada, and Mexico. Match schedules, tickets, travel tips, and hotels.',
   keywords: [
     'FIFA World Cup 2026',
+    'World Cup 2026 scores',
+    'World Cup 2026 results',
     'World Cup 2026 host cities',
     'World Cup 2026 stadiums',
     'FIFA World Cup USA 2026',

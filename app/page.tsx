@@ -15,12 +15,12 @@ const InteractiveMap = dynamic(() => import('@/components/InteractiveMap'), { ss
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://fifaworldcup2026guide.com';
 
 export const metadata: Metadata = {
-  title: 'FIFA World Cup 2026 Host Cities & Stadiums — Complete Guide',
+  title: 'FIFA World Cup 2026 Scores, Results & Host Cities Guide',
   description:
-    'Explore all 16 FIFA World Cup 2026 host cities across the USA, Canada, and Mexico. Stadium guides, travel tips, tickets info, match schedules and more for every venue.',
+    'Your complete FIFA World Cup 2026 hub — scores, results, all 16 host cities and stadiums across the USA, Canada, and Mexico. Match schedules, tickets, travel tips, and hotels.',
   openGraph: {
-    title: 'FIFA World Cup 2026 Host Cities & Stadiums Guide',
-    description: 'Complete guide to all 16 FIFA World Cup 2026 host cities and stadiums.',
+    title: 'FIFA World Cup 2026 Scores, Results & Host Cities Guide',
+    description: 'Scores, results, host cities, stadiums, tickets and travel tips for FIFA World Cup 2026.',
     url: SITE_URL,
     images: [{ url: `${SITE_URL}/og/home.jpg`, width: 1200, height: 630 }],
   },
@@ -111,15 +111,21 @@ export default function HomePage() {
           </div>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
             FIFA World Cup 2026 —{' '}
-            <span className="text-gold">Host Cities & Stadiums Guide</span>
+            <span className="text-gold">Scores, Cities & Stadiums Guide</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Everything you need to plan your trip to the biggest sporting event on Earth. Explore all 16 host cities across the USA, Canada, and Mexico — stadiums, tickets, travel tips, and more.
+            Your complete FIFA World Cup 2026 hub. Follow scores and results, explore all 16 host cities across the USA, Canada, and Mexico — stadiums, tickets, travel tips, and more.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/cities"
+              href="/scores"
               className="btn-primary text-lg px-8 py-4"
+            >
+              View Scores & Results ⚽
+            </Link>
+            <Link
+              href="/cities"
+              className="bg-white/10 text-white border border-white/20 hover:bg-white/20 font-bold px-8 py-4 rounded-full text-lg transition-colors inline-flex items-center gap-2"
             >
               Explore All 16 Cities 🗺️
             </Link>

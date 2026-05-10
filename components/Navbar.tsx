@@ -6,10 +6,10 @@ import { useState, useEffect } from 'react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
+  { href: '/scores', label: 'Scores' },
   { href: '/cities', label: 'Cities' },
   { href: '/stadiums/metlife-stadium', label: 'Stadiums' },
   { href: '/news', label: 'News' },
-  { href: '/scores', label: 'Scores' },
   { href: '/news?category=Travel+Tips', label: 'Travel Tips' },
 ];
 

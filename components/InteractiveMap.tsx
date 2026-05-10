@@ -131,7 +131,7 @@ export default function InteractiveMap({
   }, [centerLat, centerLng, zoom, singleCity, cities.map((c) => c.slug).join(',')]);
 
   return (
-    <div className="relative">
+    <div className="relative" style={{ isolation: 'isolate' }}>
       <div
         ref={containerRef}
         className="w-full rounded-2xl overflow-hidden shadow-lg border border-gray-200"
