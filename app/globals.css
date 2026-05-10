@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet CSS */
+@import 'leaflet/dist/leaflet.css';
+
+@layer base {
+  :root {
+    --navy: #0a1628;
+    --gold: #c9a84c;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-800 bg-white antialiased;
+  }
+
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-gold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold text-navy font-bold px-6 py-3 rounded-full hover:bg-yellow-400 transition-colors inline-flex items-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply bg-navy text-white font-bold px-6 py-3 rounded-full hover:bg-navy-50 transition-colors inline-flex items-center gap-2;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-black text-navy;
+  }
+
+  .section-subheading {
+    @apply text-xl md:text-2xl font-bold text-navy;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow;
+  }
+
+  /* Ad slot base styles */
+  .ad-slot {
+    @apply overflow-hidden;
+  }
+
+  .ad-slot-leaderboard {
+    @apply mx-auto max-w-[728px];
+  }
+
+  .ad-slot-sidebar {
+    @apply sticky top-20;
+  }
+}
+
+@layer utilities {
+  .text-navy {
+    color: var(--navy);
+  }
+
+  .bg-navy {
+    background-color: var(--navy);
+  }
+
+  .text-gold {
+    color: var(--gold);
+  }
+
+  .bg-gold {
+    background-color: var(--gold);
+  }
+
+  .border-gold {
+    border-color: var(--gold);
+  }
+
+  .ring-gold {
+    --tw-ring-color: var(--gold);
+  }
+}
+
+/* Back to top button */
+#back-to-top {
+  @apply fixed bottom-6 right-6 z-40 w-12 h-12 bg-navy text-white rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300;
+}
+
+#back-to-top.visible {
+  @apply opacity-100 pointer-events-auto;
+}
+
+/* Prose overrides */
+.prose h2 {
+  @apply text-navy;
+}
+
+.prose h3 {
+  @apply text-navy;
+}
+
+.prose a {
+  @apply text-gold hover:text-yellow-600 no-underline hover:underline;
+}
+
+.prose img {
+  @apply rounded-xl;
+}
+
+/* Leaflet popup custom styles */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+.leaflet-popup-content {
+  margin: 14px !important;
+  min-width: 200px;
+}
+
+.leaflet-popup-tip-container {
+  margin-top: -1px;
+}
