@@ -10,7 +10,7 @@ interface BreadcrumbsProps {
   items: BreadcrumbItem[];
 }
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://fifaworldcup2026guide.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://footballworldcupnews.com';
 
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
   const schema = breadcrumbSchema(

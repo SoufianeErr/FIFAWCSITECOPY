@@ -9,7 +9,7 @@ export const metadata: Metadata = buildMetadata({
   noIndex: true,
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://fifaworldcup2026guide.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://footballworldcupnews.com';
 
 export default function PrivacyPolicyPage() {
   return (

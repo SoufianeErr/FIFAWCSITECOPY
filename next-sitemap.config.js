@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://fifaworldcup2026guide.com',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://footballworldcupnews.com',
   generateRobotsTxt: true,
   generateIndexSitemap: true,
   sitemapSize: 5000,
@@ -13,7 +13,7 @@ module.exports = {
       { userAgent: 'Googlebot', allow: '/' },
     ],
     additionalSitemaps: [
-      `${process.env.NEXT_PUBLIC_SITE_URL || 'https://fifaworldcup2026guide.com'}/sitemap.xml`,
+      `${process.env.NEXT_PUBLIC_SITE_URL || 'https://footballworldcupnews.com'}/sitemap.xml`,
     ],
   },
   transform: async (config, path) => {

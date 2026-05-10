@@ -12,7 +12,7 @@ import { organizationSchema } from '@/lib/seo';
 
 const InteractiveMap = dynamic(() => import('@/components/InteractiveMap'), { ssr: false });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://fifaworldcup2026guide.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://footballworldcupnews.com';
 
 export const metadata: Metadata = {
   title: 'FIFA World Cup 2026 Scores, Results & Host Cities Guide',

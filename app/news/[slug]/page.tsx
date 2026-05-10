@@ -14,7 +14,7 @@ import SocialShare from '@/components/SocialShare';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://fifaworldcup2026guide.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://footballworldcupnews.com';
 
 const contentDir = path.join(process.cwd(), 'content', 'news');
 

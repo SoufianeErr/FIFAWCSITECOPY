@@ -11,7 +11,7 @@ import SocialShare from '@/components/SocialShare';
 
 const InteractiveMap = dynamic(() => import('@/components/InteractiveMap'), { ssr: false });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://fifaworldcup2026guide.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://footballworldcupnews.com';
 
 export async function generateStaticParams() {
   return stadiums.map((s) => ({ slug: s.slug }));

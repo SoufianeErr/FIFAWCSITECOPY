@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { City } from './cities';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://fifaworldcup2026guide.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://footballworldcupnews.com';
 const SITE_NAME = 'FIFA World Cup 2026 Guide';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og/default-og.jpg`;
 

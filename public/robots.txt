@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fifaworldcup2026guide.com/sitemap.xml
-Sitemap: https://fifaworldcup2026guide.com/server-sitemap.xml
+Sitemap: https://footballworldcupnews.com/sitemap.xml
+Sitemap: https://footballworldcupnews.com/server-sitemap.xml
