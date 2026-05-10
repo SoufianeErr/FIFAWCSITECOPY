@@ -1,7 +1,80 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { allMatches, groups, groupTeams, rounds, type ScoreMatch } from '@/lib/scores';
+
+// ISO 3166-1 alpha-2 codes for flagcdn.com
+const teamFlagCode: Record<string, string> = {
+  'Mexico': 'mx',
+  'South Africa': 'za',
+  'Korea Republic': 'kr',
+  'Czechia': 'cz',
+  'Canada': 'ca',
+  'Switzerland': 'ch',
+  'Qatar': 'qa',
+  'Bosnia & Herzegovina': 'ba',
+  'USA': 'us',
+  'Paraguay': 'py',
+  'Turkiye': 'tr',
+  'Australia': 'au',
+  'Iran': 'ir',
+  'New Zealand': 'nz',
+  'Belgium': 'be',
+  'Egypt': 'eg',
+  'Netherlands': 'nl',
+  'Japan': 'jp',
+  'Sweden': 'se',
+  'Tunisia': 'tn',
+  'Argentina': 'ar',
+  'Austria': 'at',
+  'Jordan': 'jo',
+  'Algeria': 'dz',
+  'France': 'fr',
+  'Senegal': 'sn',
+  'Norway': 'no',
+  'Iraq': 'iq',
+  'Brazil': 'br',
+  'Morocco': 'ma',
+  'Scotland': 'gb-sct',
+  'Haiti': 'ht',
+  'Ecuador': 'ec',
+  'Germany': 'de',
+  'Curaçao': 'cw',
+  "Cote d'Ivoire": 'ci',
+  'England': 'gb-eng',
+  'Panama': 'pa',
+  'Croatia': 'hr',
+  'Ghana': 'gh',
+  'Saudi Arabia': 'sa',
+  'Uruguay': 'uy',
+  'Cabo Verde': 'cv',
+  'Spain': 'es',
+  'Colombia': 'co',
+  'Portugal': 'pt',
+  'Congo DR': 'cd',
+  'Uzbekistan': 'uz',
+};
+
+function TeamFlag({ name }: { name: string }) {
+  const code = teamFlagCode[name];
+  if (!code) {
+    return <span className="text-3xl">🏳️</span>;
+  }
+  return (
+    <div className="flex flex-col items-center gap-1">
+      <div className="w-12 h-8 rounded overflow-hidden shadow border border-gray-200 relative">
+        <Image
+          src={`https://flagcdn.com/w80/${code}.png`}
+          alt={`${name} flag`}
+          fill
+          className="object-cover"
+          unoptimized
+        />
+      </div>
+    </div>
+  );
+}
 
 const roundColors: Record<string, string> = {
   'Group Stage': 'bg-blue-100 text-blue-700',
@@ -39,8 +112,8 @@ function MatchCard({ match }: { match: ScoreMatch }) {
       {/* Teams & Score */}
       <div className="flex items-center justify-between gap-2">
         {/* Home */}
-        <div className="flex-1 flex flex-col items-center text-center gap-1">
-          <span className="text-3xl">{match.homeFlag}</span>
+        <div className="flex-1 flex flex-col items-center text-center gap-1.5">
+          <TeamFlag name={match.home} />
           <span className={`text-sm font-bold ${isFinished && match.homeScore! > match.awayScore! ? 'text-navy' : 'text-gray-700'}`}>
             {match.home}
           </span>
@@ -61,8 +134,8 @@ function MatchCard({ match }: { match: ScoreMatch }) {
         </div>
 
         {/* Away */}
-        <div className="flex-1 flex flex-col items-center text-center gap-1">
-          <span className="text-3xl">{match.awayFlag}</span>
+        <div className="flex-1 flex flex-col items-center text-center gap-1.5">
+          <TeamFlag name={match.away} />
           <span className={`text-sm font-bold ${isFinished && match.awayScore! > match.homeScore! ? 'text-navy' : 'text-gray-700'}`}>
             {match.away}
           </span>
