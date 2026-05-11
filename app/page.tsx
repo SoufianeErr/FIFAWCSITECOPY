@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { cities, cityStats } from '@/lib/cities';
 import { stadiumsByCapacity } from '@/lib/stadiums';
@@ -267,25 +268,25 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
-              slug: 'best-host-cities-2026',
-              title: 'Best Host Cities to Visit for FIFA World Cup 2026',
-              category: 'Cities',
-              date: 'Jan 15, 2026',
-              image: '/images/news/best-host-cities.jpg',
+              slug: 'world-cup-2026-fan-fest-locations',
+              title: 'World Cup 2026 Fan Fest Locations — Watch Every Match for Free',
+              category: 'Fan Guides',
+              date: 'May 10, 2026',
+              image: '/images/cities/fanzone.jpg',
+            },
+            {
+              slug: 'how-to-watch-world-cup-2026',
+              title: 'How to Watch FIFA World Cup 2026 — TV Channels & Streaming',
+              category: 'Fan Guides',
+              date: 'May 10, 2026',
+              image: '/images/cities/streamingtv.jpg',
             },
             {
               slug: 'how-to-get-tickets',
               title: 'How to Get Tickets for FIFA World Cup 2026',
               category: 'Tickets',
               date: 'Jan 20, 2026',
-              image: '/images/news/tickets.jpg',
-            },
-            {
-              slug: 'biggest-stadiums-ranked',
-              title: 'Biggest Stadiums at FIFA World Cup 2026 Ranked',
-              category: 'Stadiums',
-              date: 'Feb 1, 2026',
-              image: '/images/news/stadiums.jpg',
+              image: '/images/cities/tickets.jpg',
             },
           ].map((article) => (
             <Link
@@ -293,10 +294,15 @@ export default function HomePage() {
               href={`/news/${article.slug}`}
               className="group block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all"
             >
-              <div className="h-40 bg-gradient-to-br from-navy to-blue-800 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-6xl opacity-20">
-                  ⚽
-                </div>
+              <div className="h-40 relative overflow-hidden">
+                <Image
+                  src={article.image}
+                  alt={article.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 <div className="absolute top-3 left-3">
                   <span className="text-xs font-bold bg-gold text-navy px-2 py-1 rounded-full">
                     {article.category}
