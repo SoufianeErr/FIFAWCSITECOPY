@@ -64,7 +64,7 @@ const articles = [
     date: 'May 10, 2026',
     readTime: '7 min read',
     featured: true,
-    image: '/images/cities/best-host-cities.jpg',
+    image: '/images/cities/fanzone.jpg',
   },
   {
     slug: 'how-to-watch-world-cup-2026',
@@ -74,7 +74,7 @@ const articles = [
     date: 'May 10, 2026',
     readTime: '6 min read',
     featured: true,
-    image: '/images/cities/travel.jpg',
+    image: '/images/cities/streamingtv.jpg',
   },
 ];
 
