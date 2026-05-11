@@ -73,6 +73,8 @@ const relatedArticles = [
   { slug: 'biggest-stadiums-ranked', title: 'Biggest Stadiums Ranked' },
   { slug: 'travel-guide-usa', title: 'USA Travel Guide' },
   { slug: 'mexico-city-vs-los-angeles', title: 'Mexico City vs Los Angeles' },
+  { slug: 'world-cup-2026-fan-fest-locations', title: 'Fan Fest Locations' },
+  { slug: 'how-to-watch-world-cup-2026', title: 'How to Watch World Cup 2026' },
 ];
 
 export default function ArticlePage({ params }: { params: { slug: string } }) {

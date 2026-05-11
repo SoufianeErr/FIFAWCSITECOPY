@@ -56,6 +56,26 @@ const articles = [
     featured: false,
     image: '/images/cities/mexico-city-la.jpg',
   },
+  {
+    slug: 'world-cup-2026-fan-fest-locations',
+    title: 'World Cup 2026 Fan Fest Locations — Watch Every Match for Free',
+    description: "Can't get tickets? Official Fan Fests across all 16 host cities let you watch every game live on giant screens for free. Here's everything you need to know.",
+    category: 'Fan Guides',
+    date: 'May 10, 2026',
+    readTime: '7 min read',
+    featured: true,
+    image: '/images/cities/best-host-cities.jpg',
+  },
+  {
+    slug: 'how-to-watch-world-cup-2026',
+    title: 'How to Watch FIFA World Cup 2026 — TV Channels & Streaming Guide',
+    description: 'Complete guide to watching FIFA World Cup 2026 on TV and online. Every channel and streaming service in the USA, Canada, Mexico, UK and worldwide.',
+    category: 'Fan Guides',
+    date: 'May 10, 2026',
+    readTime: '6 min read',
+    featured: true,
+    image: '/images/cities/travel.jpg',
+  },
 ];
 
 const categories = ['All', 'Cities', 'Stadiums', 'Travel Tips', 'Tickets', 'Fan Guides'];
