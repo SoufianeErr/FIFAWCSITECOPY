@@ -109,6 +109,8 @@ export function sportsEventSchema(city: City) {
       url: 'https://www.fifa.com/tickets',
       availability: 'https://schema.org/InStock',
       priceCurrency: 'USD',
+      price: '50',
+      validFrom: '2025-01-01',
     },
     sport: 'Association Football',
     eventStatus: 'https://schema.org/EventScheduled',
