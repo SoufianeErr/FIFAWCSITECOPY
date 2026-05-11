@@ -7,7 +7,6 @@ import CityFilter from '@/components/CityFilter';
 import FAQSection from '@/components/FAQSection';
 import AdSlot from '@/components/AdSlot';
 import StadiumCard from '@/components/StadiumCard';
-import NewsletterForm from '@/components/NewsletterForm';
 import { organizationSchema } from '@/lib/seo';
 
 const InteractiveMap = dynamic(() => import('@/components/InteractiveMap'), { ssr: false });
@@ -312,20 +311,6 @@ export default function HomePage() {
               </div>
             </Link>
           ))}
-        </div>
-      </section>
-
-      {/* Newsletter */}
-      <section className="bg-gradient-to-r from-gold to-yellow-500 py-16">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl font-black text-navy mb-3">
-            Stay Updated on World Cup 2026
-          </h2>
-          <p className="text-navy/70 mb-8">
-            Get the latest news on tickets, travel tips, and match schedules delivered to your inbox.
-          </p>
-          <NewsletterForm />
-          <p className="text-xs text-navy/60 mt-3">No spam. Unsubscribe anytime.</p>
         </div>
       </section>
 
