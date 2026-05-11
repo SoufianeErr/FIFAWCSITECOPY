@@ -2,7 +2,7 @@
 module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://footballworldcupnews.com',
   generateRobotsTxt: true,
-  generateIndexSitemap: true,
+  generateIndexSitemap: false,
   sitemapSize: 5000,
   changefreq: 'weekly',
   priority: 0.7,
@@ -10,10 +10,6 @@ module.exports = {
   robotsTxtOptions: {
     policies: [
       { userAgent: '*', allow: '/' },
-      { userAgent: 'Googlebot', allow: '/' },
-    ],
-    additionalSitemaps: [
-      `${process.env.NEXT_PUBLIC_SITE_URL || 'https://footballworldcupnews.com'}/sitemap.xml`,
     ],
   },
   transform: async (config, path) => {
