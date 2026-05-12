@@ -60,7 +60,7 @@ const articles = [
     slug: 'players-injured-world-cup-2026',
     title: "Stars Who Will Miss FIFA World Cup 2026 Through Injury — Cruel Blow",
     description: "Injuries have cruelly ended the World Cup dreams of some of football's biggest stars. These players will be watching the 2026 tournament from the sidelines.",
-    category: 'Fan Guides',
+    category: 'Teams',
     date: 'May 12, 2026',
     readTime: '7 min read',
     featured: true,
@@ -70,7 +70,7 @@ const articles = [
     slug: 'players-missing-world-cup-2026',
     title: "The Legends Who Won't Be at FIFA World Cup 2026 — End of an Era",
     description: "From Karim Benzema to Luka Modric, these legendary footballers will not be playing at FIFA World Cup 2026. A farewell to icons who defined a generation.",
-    category: 'Fan Guides',
+    category: 'Teams',
     date: 'May 12, 2026',
     readTime: '8 min read',
     featured: true,
@@ -98,7 +98,7 @@ const articles = [
   },
 ];
 
-const categories = ['All', 'Cities', 'Stadiums', 'Travel Tips', 'Tickets', 'Fan Guides'];
+const categories = ['All', 'Cities', 'Stadiums', 'Travel Tips', 'Tickets', 'Fan Guides', 'Teams'];
 
 const categoryColors: Record<string, string> = {
   Cities: 'bg-blue-100 text-blue-700',
@@ -106,6 +106,7 @@ const categoryColors: Record<string, string> = {
   'Travel Tips': 'bg-green-100 text-green-700',
   Tickets: 'bg-orange-100 text-orange-700',
   'Fan Guides': 'bg-pink-100 text-pink-700',
+  'Teams': 'bg-red-100 text-red-700',
 };
 
 export default function NewsFilter() {

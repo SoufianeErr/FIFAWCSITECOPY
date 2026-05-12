@@ -65,6 +65,7 @@ const categoryColors: Record<string, string> = {
   'Travel Tips': 'bg-green-100 text-green-700',
   Tickets: 'bg-orange-100 text-orange-700',
   'Fan Guides': 'bg-pink-100 text-pink-700',
+  'Teams': 'bg-red-100 text-red-700',
 };
 
 const relatedArticles = [
