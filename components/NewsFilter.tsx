@@ -64,7 +64,7 @@ const articles = [
     date: 'May 12, 2026',
     readTime: '7 min read',
     featured: true,
-    image: '/images/cities/streamingtv.jpg',
+    image: '/images/cities/injury.jpg',
   },
   {
     slug: 'players-missing-world-cup-2026',
@@ -74,7 +74,7 @@ const articles = [
     date: 'May 12, 2026',
     readTime: '8 min read',
     featured: true,
-    image: '/images/cities/fanzone.jpg',
+    image: '/images/cities/karimbenzema.jpg',
   },
   {
     slug: 'world-cup-2026-fan-fest-locations',
