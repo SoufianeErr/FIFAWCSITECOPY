@@ -76,6 +76,7 @@ const relatedArticles = [
   { slug: 'world-cup-2026-fan-fest-locations', title: 'Fan Fest Locations' },
   { slug: 'how-to-watch-world-cup-2026', title: 'How to Watch World Cup 2026' },
   { slug: 'players-missing-world-cup-2026', title: 'Legends Missing World Cup 2026' },
+  { slug: 'players-injured-world-cup-2026', title: 'Stars Injured for World Cup 2026' },
 ];
 
 export default function ArticlePage({ params }: { params: { slug: string } }) {
