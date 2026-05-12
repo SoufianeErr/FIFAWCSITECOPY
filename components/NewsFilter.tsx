@@ -98,7 +98,7 @@ const articles = [
   },
 ];
 
-const categories = ['All', 'Cities', 'Stadiums', 'Travel Tips', 'Tickets', 'Fan Guides', 'Teams'];
+const categories = ['All', 'Cities', 'Stadiums', 'Teams', 'Travel Tips', 'Tickets', 'Fan Guides'];
 
 const categoryColors: Record<string, string> = {
   Cities: 'bg-blue-100 text-blue-700',
