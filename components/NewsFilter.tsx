@@ -57,7 +57,6 @@ const articles = [
     image: '/images/cities/mexico-city-la.jpg',
   },
   {
-    {
     slug: 'players-injured-world-cup-2026',
     title: "Stars Who Will Miss FIFA World Cup 2026 Through Injury — Cruel Blow",
     description: "Injuries have cruelly ended the World Cup dreams of some of football's biggest stars. These players will be watching the 2026 tournament from the sidelines.",
