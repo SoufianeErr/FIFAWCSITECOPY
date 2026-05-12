@@ -57,6 +57,17 @@ const articles = [
     image: '/images/cities/mexico-city-la.jpg',
   },
   {
+    {
+    slug: 'players-missing-world-cup-2026',
+    title: "The Legends Who Won't Be at FIFA World Cup 2026 — End of an Era",
+    description: "From Karim Benzema to Luka Modric, these legendary footballers will not be playing at FIFA World Cup 2026. A farewell to icons who defined a generation.",
+    category: 'Fan Guides',
+    date: 'May 12, 2026',
+    readTime: '8 min read',
+    featured: true,
+    image: '/images/cities/fanzone.jpg',
+  },
+  {
     slug: 'world-cup-2026-fan-fest-locations',
     title: 'World Cup 2026 Fan Fest Locations — Watch Every Match for Free',
     description: "Can't get tickets? Official Fan Fests across all 16 host cities let you watch every game live on giant screens for free. Here's everything you need to know.",
