@@ -78,6 +78,9 @@ const relatedArticles = [
   { slug: 'how-to-watch-world-cup-2026', title: 'How to Watch World Cup 2026' },
   { slug: 'players-missing-world-cup-2026', title: 'Legends Missing World Cup 2026' },
   { slug: 'players-injured-world-cup-2026', title: 'Stars Injured for World Cup 2026' },
+  { slug: 'world-cup-2026-favorites-to-win', title: 'Top 10 Favorites to Win World Cup 2026' },
+  { slug: 'world-cup-2026-group-stage-schedule', title: 'Full Group Stage Schedule' },
+  { slug: 'first-timers-guide-world-cup-match', title: "First Timer's Guide to a World Cup Match" },
 ];
 
 export default function ArticlePage({ params }: { params: { slug: string } }) {
