@@ -84,6 +84,9 @@ const relatedArticles = [
   { slug: 'world-cup-2026-favorites-to-win', title: 'Top 10 Favorites to Win World Cup 2026' },
   { slug: 'world-cup-2026-group-stage-schedule', title: 'Full Group Stage Schedule' },
   { slug: 'first-timers-guide-world-cup-match', title: "First Timer's Guide to a World Cup Match" },
+  { slug: 'cristiano-ronaldo-world-cup-2026', title: "Cristiano Ronaldo at World Cup 2026" },
+  { slug: 'world-cup-2026-format-explained', title: 'World Cup 2026 Format Explained' },
+  { slug: 'world-cup-2026-cost-budget-guide', title: 'World Cup 2026 Cost & Budget Guide' },
 ];
 
 export default function ArticlePage({ params }: { params: { slug: string } }) {

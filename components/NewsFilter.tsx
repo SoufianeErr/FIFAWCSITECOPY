@@ -156,6 +156,36 @@ const articles = [
     featured: true,
     image: '/images/cities/streamingtv.jpg',
   },
+  {
+    slug: 'cristiano-ronaldo-world-cup-2026',
+    title: "Cristiano Ronaldo at World Cup 2026 — The Final Farewell",
+    description: "At 41, Cristiano Ronaldo faces his last World Cup in 2026. Can Portugal's captain finally win the one trophy that has eluded him?",
+    category: 'Teams',
+    date: 'May 18, 2026',
+    readTime: '8 min read',
+    featured: true,
+    image: '/images/cities/ronaldo-2026.jpg',
+  },
+  {
+    slug: 'world-cup-2026-format-explained',
+    title: 'World Cup 2026 Format Explained — 48 Teams, New Rules',
+    description: 'World Cup 2026 features 48 teams for the first time. Here\'s exactly how the new format works — groups, knockout rounds, and what changes from 2022.',
+    category: 'Fan Guides',
+    date: 'May 18, 2026',
+    readTime: '7 min read',
+    featured: true,
+    image: '/images/cities/format-2026.jpg',
+  },
+  {
+    slug: 'world-cup-2026-cost-budget-guide',
+    title: 'World Cup 2026 Cost Guide — How Much Will It Cost to Attend?',
+    description: 'How much does it cost to attend World Cup 2026? Budget breakdown for tickets, flights, hotels, and food across all 16 host cities.',
+    category: 'Travel Tips',
+    date: 'May 18, 2026',
+    readTime: '9 min read',
+    featured: true,
+    image: '/images/cities/budget-guide.jpg',
+  },
 ];
 
 const categories = ['All', 'Cities', 'Stadiums', 'Teams', 'Travel Tips', 'Tickets', 'Fan Guides'];
